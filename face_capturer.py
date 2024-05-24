@@ -66,15 +66,15 @@ def register_new_user(personName):
 
 root = tk.Tk()
 root.title("Login and Register")
-root.geometry("400x300")  # Establecer el tamaño de la ventana a 400x300 píxeles
-root.configure(bg='#0A0F1F')  # Establecer el color de fondo a azul oscuro
+root.geometry("400x300")
+root.configure(bg='#0A0F1F')
 
 # Configurar los elementos de la ventana
 label_username = tk.Label(root, text="User:", bg='#0A0F1F', fg='white', font=('Helvetica', 12))
-label_username.pack(pady=(30, 10))  # Espaciado superior e inferior
+label_username.pack(pady=(30, 10))
 
 entry_username = tk.Entry(root, font=('Helvetica', 12))
-entry_username.pack(pady=(0, 20))  # Espaciado inferior
+entry_username.pack(pady=(0, 20))
 
 btn_login = tk.Button(root, text="Login", command=login, font=('Helvetica', 12), bg='#29a617', fg='white')
 btn_login.pack()
